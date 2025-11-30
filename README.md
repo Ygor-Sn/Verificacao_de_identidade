@@ -33,10 +33,8 @@ da sessão atual.
 
 ## Como reproduzir
 ```bash
-python -m venv .venv
-# ativar ambiente...
+
 pip install -r requirements.txt
-python src/main.py --seed 42
 
 ## Resultados do Projeto
 
