@@ -1,9 +1,8 @@
 import face_recognition,os,cv2,time
-folder_face = r'faces/'
+folder_face = r'./faces/'
 files_in_folder = len(os.listdir(folder_face))
 array_time_check = []
 array_por_ecli = []
-
 
 def recon(frame, context, txt_context,resultado_recon):
     global files_in_folder
