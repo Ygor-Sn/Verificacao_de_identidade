@@ -33,13 +33,46 @@ da sessão atual.
 
 ## Como reproduzir
 ```bash
+python -m venv .venv
+
+## ativar ambiente...
+
+python src/main.py
+
+## Dependências do face_recognition (importante!!)
+
+O pacote `face_recognition` utiliza a biblioteca `dlib`, que requer CMake
+para funcionar corretamente., em alguns sistemas também pode ser necessário
+instalar o CMake manualmente:
+
+Download oficial: https://cmake.org/download/
 
 pip install -r requirements.txt
 
 ## Resultados do Projeto
 
-(Principais métricas + 2–3 gráficos com 1–2 linhas de interpretação)
+resultados
 
-Estrutura
+Foi criado um gráfico exbiindo o tempo que cada reconhecimento levou, onde boa parte das execuções
+teve uma latência baixa com algumas variações por conta do hardware. Além do grafico de similaridade 
+que mostra de formaamigavel o percentual da verificação entre as variações dos rostos, quedas no
+grafico, muitas vezes é por causa de 3 fatores: Movimento, Iluminação do local ou então algum 
+objeto no rosto(Oculos,bone, mascara por exemplo.)
 
-(src/, data/, models/, reports/, notebooks/)
+Estrutura:
+
+src/
+ ├─ main.py            # Executa o sistema de reconhecimento facial
+ ├─ recontoshi.py      # Funções de reconhecimento, salvamento e cálculo
+ ├─ grafic_matplot.py  # Gera gráficos de latência e similaridade
+ ├─ vars.py            # Armazena métricas da sessão
+faces/
+ └─ face_0.jpeg        # Banco de rostos cadastrados
+reports/
+ └─ algumnome_mt_loko                # Gráficos gerados
+
+ ## Requisitos mínimos
+- Python 3.10 ou superior
+- Webcam integrada ou USB
+- Windows 10/11
+- CMake instalado no sistema (Windows MSI recomendado)
