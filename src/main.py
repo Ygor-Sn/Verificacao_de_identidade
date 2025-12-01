@@ -13,7 +13,7 @@ txt_context = ["Mantenha o rosto centralizado",
 pause_until = 0
 
 window = tk.Tk()
-window.title("A")
+window.title("Projeto Verificação de Identidade por Reconhecimento Facial Identificação")
 window.geometry('700x550')
 
 label = tk.Label(window)

@@ -1,4 +1,4 @@
-# verificacao_de_identidade
+# Verificação de Identidade por Reconhecimento Facial Identificação
 
 ## Equipe
 - Nome Ygor samuel nanes de oliveira — RA: 2225201035
