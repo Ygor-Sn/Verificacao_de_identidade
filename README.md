@@ -23,13 +23,14 @@ o caso proposto, já que opera de modo offline e não precisa de muito tempo par
 verificação.
 
 ## Dados
-Os dados usados pelo sistema, são gerados por ele mesmo, quando solicitado a ele pressionando 
-a tecla R, ele apenas extrai os embeddings para verificar se realmente tem uma pessoa ali, 
-depois ele salva o frame da webcam em um formato JPEG na pasta faces (exemplo: faces/face_0.jpeg),
-apos isso ele segue normalmente com a verificação de faces. depois de cada verificação feita,
-ele salva na memoria quanto tempo ele levou para fazer a verificação e a similaridade de cada
-rosto, para gravar essa informação, basta precionar a tecla g para ele gravar as metricas
-da sessão atual.
+Os dados usados pelo sistema, são gerados por ele mesmo, para fins de gerar metricas,
+foram usados rosto não são reais, foram obtidos atravês do site https://this-person-does-not-exist.com/en.
+quando solicitado a ele pressionando a tecla R, ele apenas extrai os embeddings para verificar 
+se realmente tem uma pessoa ali,depois ele salva o frame da webcam em um formato JPEG na pasta faces 
+(exemplo: faces/face_0.jpeg),apos isso ele segue normalmente com a verificação de faces. 
+depois de cada verificação feita,ele salva na memoria quanto tempo ele levou para fazer a verificação 
+e a similaridade de cada rosto, para gravar essa informação, basta precionar a tecla g para ele 
+gravar as metricas da sessão atual.
 
 ## Como reproduzir
 ```bash

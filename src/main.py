@@ -47,7 +47,7 @@ def main():
     if keyboard.is_pressed('g'):
 
         recon_time, array_dis_por = send_info_grafic()
-        with open('vars.py', 'w') as test:
+        with open('./src/vars.py', 'w') as test:
             test.write(f'''
 import numpy as np
 alt_array_dis_por={recon_time + alt_recon_time}
